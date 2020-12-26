@@ -1,0 +1,103 @@
+/*
+    Created on : 13. 12. 2020, 19:26:27
+    Author     : Tomáš Douděra <tomasdoudera.cz>
+*/
+
+.pre-footer {
+
+    background-color: $prefooter-color-bg;
+    padding: em( 40  )em( 0 );
+
+    h2 {
+        color: $secondary;
+    }
+
+    h3 {
+        margin-top: 0;
+        margin-bottom: em( 10, 28 );
+        border-bottom: em( 3, 28 ) solid $primary;
+        padding-bottom: em(10);
+
+    }
+
+    h5 {
+        margin-top: em(8, 20);
+        margin-bottom: em(8, 20);
+    }
+
+    .icon-services {
+        @include font-size( em( 23  ));
+        color: #fff;
+        padding: em( 10 );
+        background-color: $primary;
+        border-radius: 100%;
+    }
+
+    .card {
+        height: 100%;
+    }
+
+    .card-body {
+        padding-left: em(20);
+    }
+
+    .box {
+        background: #fff;
+    }
+
+}
+
+.contact-form {
+    max-width: em(560);
+    margin: em(72) auto 0;
+    text-align: left;
+
+    label {
+        font-size: em(17);
+        display: block;
+        margin-bottom: em(22);
+    }
+
+    .btn {
+        font-size: 85%;
+        margin-top: 0;
+        padding: {
+            left: 2.5em;
+            right: 2.5em;
+        }
+    }
+}
+
+input,
+textarea {
+/*    color: $color-text;*/
+
+    font: {
+        size:   em(14);
+        weight: normal;
+    }
+    border: none;
+    border-bottom: em(3) solid rgba( $primary, 1 );
+    background-color: rgba( $primary, 0.02 );
+    border-radius: em(14);
+    
+    outline: none;
+
+    padding: em(10);
+    margin-top: em(6);
+
+    display: block;
+    max-width: 100%;
+    width: 100%;
+
+
+
+    &:focus {
+        border-color: rgba( $primary, 0.5 );
+    }
+    
+    .btn {
+        font-size: em(16);
+        padding: em(18) em(39);
+    }
+}

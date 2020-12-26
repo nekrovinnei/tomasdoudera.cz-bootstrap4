@@ -1,0 +1,24 @@
+/*
+    Created on : 12. 12. 2020, 16:28:40
+    Author     : tomas doudera <tomasdoudera@gmail.com>
+*/
+
+// Import variables and setting
+@import 'variables'; // Variables
+
+// Import Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// Import Main
+@import 'mixins';    // Mixins
+@import 'debug';     // Debug 
+@import 'typography';//  Typography
+
+// Import Page parts
+@import 'page_parts/main-content';  // Navigation
+@import 'page_parts/main-nav';  // Navigation
+@import 'page_parts/pre-footer';  // Navigation
+@import 'page_parts/footer';  // Navigation
+
+// Import Pages
+@import 'pages/front-page';// Front Page

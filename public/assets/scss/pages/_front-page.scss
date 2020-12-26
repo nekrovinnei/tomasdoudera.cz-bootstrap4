@@ -1,0 +1,159 @@
+
+//
+// BANNER SECTION
+//--------------------------------------
+.section-banner {
+
+    background-image: url("../img/banner/bg-header-opt-v2.jpg");
+    background-image: linear-gradient(180deg,rgba(19,29,71,0.79) 20%,#ffffff 125%),url("../img/banner/bg-header-opt-v2.jpg");
+    background-color: #cccccc;
+    background-position: 50%;
+    background-size: 100%;
+    background-size: cover;
+    padding-top: rem( 50 );
+    position: relative;
+
+    h1 {
+        font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        @include font-size( 54 );
+        letter-spacing: rem( 5 );
+        line-height: 1.5em;
+        text-shadow: rgb(0, 0, 0) 0 rem( 1.4 )rem( 1.4 );
+        color: #fff;
+        margin: rem( 0 );
+    }
+
+    .divider {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI2dnciIHZpZXdCb3g9IjAgMCAxMjgwIDE0MCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjZmZmZmZmIj48cGF0aCBkPSJNNzI1LjI5IDEwMS4yQzMyNS4yMiAxMjIuNDggMCAwIDAgMHYxNDBoMTI4MFYwcy0xNTQuNjQgNzkuOTItNTU0LjcxIDEwMS4yeiIgZmlsbC1vcGFjaXR5PSIuMyIvPjxwYXRoIGQ9Ik01NTYuNDUgMTE5Ljc0Qzk1My40MSAxNDAgMTI4MCAxNCAxMjgwIDE0djEyNkgwVjBzMTU5LjUgOTkuNDggNTU2LjQ1IDExOS43NHoiIGZpbGwtb3BhY2l0eT0iLjUiLz48cGF0aCBkPSJNNjQwIDE0MGMzNTMuNDYgMCA2NDAtMTQwIDY0MC0xMzl2MTQwSDBWMHMyODYuNTQgMTQwIDY0MCAxNDB6Ii8+PC9nPjwvc3ZnPg==);
+        background-size: 100% 6vw;
+        bottom: 0;
+        height: 6vw;
+        z-index: 1;
+    }
+
+    .btn {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        bottom: rem(-16);
+        text-align: center;
+        width: fit-content;
+    }
+}
+
+//
+// ADVANTAGES SECTION
+//--------------------------------------
+.section-advantages {
+
+    padding-top: rem( 50 );
+
+    h5 {
+        margin: 0 0 rem( 15, 20 );
+    }
+
+    h2 {
+        @include font-size(36);
+    }
+
+    @include media-breakpoint-up(lg) {
+        .btn {
+            position: absolute;
+            bottom: 20px;
+        }
+    }
+
+}
+
+//
+// SERVICES SECTION
+//--------------------------------------
+.section-services {
+
+    background-color: #dbdbdb;
+    padding: rem( 40  )rem( 0 );
+
+    h3 {
+        margin-top: 0;
+        margin-bottom: rem( 15 );
+        border-bottom: rem( 3 ) solid $primary;
+        padding-bottom: rem(10);
+    }
+
+}
+
+.icon-services {
+
+    @include font-size( rem( 23  ));
+    color: #fff;
+    padding: rem( 10 );
+    background-color: $primary;
+    border-radius: 100%;
+
+}
+
+//
+// REFERENCES SECTION
+//--------------------------------------
+.section-references {
+
+    padding-top: rem(40);
+    padding-bottom: rem(40);
+
+    h2 {
+        margin-bottom: rem(20);
+    }
+
+    H6 {
+        margin-top: rem(6);
+    }
+
+}
+
+//
+// CERTIFICATES SECTION
+//--------------------------------------
+.section-certificates {
+    background-color: #dbdbdb;
+    padding: rem( 50  )rem( 0 );
+
+    .centered {
+        width: 100%;
+        background: rgba(0,0,0, .8);
+        text-align: center;
+        padding: rem( 15 );
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+//
+// ABOUT SECTION
+//--------------------------------------
+.section-about {
+
+    padding-top: rem( 50  );
+    padding-bottom: rem( 50  );
+
+    .about-description {
+        padding-right: 20%;
+    }
+
+    img {
+        border-radius: 100%;
+    }
+
+    .icon-wrapper {
+        padding: 0 rem(50);
+    }
+    .btn {
+        margin-top: 20px;
+    }
+}
+

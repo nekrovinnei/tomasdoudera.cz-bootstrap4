@@ -1,0 +1,47 @@
+/*
+    Created on : 12. 12. 2020, 22:26:26
+    Author     : tomas
+*/
+
+
+
+//
+// CLEARFIX
+//--------------------------------------
+
+@mixin clearfix {
+    &:before,
+    &:after { content: " "; display: table; }
+    &:after { clear: both; }
+}
+
+//
+// TYPOGRAPHY
+//--------------------------------------
+
+
+// Convert px to rem return font-size
+@mixin font-size($size, $context: 16) {
+
+    font-size: rem($size, $context);
+
+}
+
+//
+// FUNCTIONS
+//--------------------------------------
+
+// Convert px to em value
+@function em( $size, $context: 16 ) {
+
+    @return ($size / $context) + rem;
+
+}
+
+
+// Convert px to rem value
+@function rem( $size, $context: 16 ) {
+
+    @return ($size / $context) + rem;
+
+}

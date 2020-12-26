@@ -1,0 +1,27 @@
+{
+    "name": "tomasdoudera.cz_BTS_npm",
+    "version": "1.0.0",
+    "engines": {
+        "node": "0.8.x"
+    },
+    "keywords": [
+        "util",
+        "functional",
+        "server",
+        "client",
+        "browser"
+    ],
+    "author": "Tomáš Douděra <tomasdoudera.cz>",
+    "contributors": [],
+    "dependencies": {
+        "bootstrap": "^4.5.3"
+    },
+    "scripts": {
+        "balls": "node-sass public/assets/scss/base.scss public/assets/css/style.css --watch"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.12.10",
+        "@babel/preset-env": "^7.12.10",
+        "node-sass": "^5.0.0"
+    }
+}

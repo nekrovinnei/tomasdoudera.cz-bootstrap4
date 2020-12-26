@@ -1,0 +1,108 @@
+/*
+    Created on : 12. 12. 2020, 17:29:09
+    Author     : tomas
+*/
+
+
+.logo {
+    padding: rem( 2 );
+    img {
+        max-height: rem( 68 );
+        width: auto;
+    }
+}   
+
+.nav-item {
+
+    &:hover,
+        &:active {
+        .nav-link {
+            color: lighten( $primary, 15% );
+        }
+    }
+
+    &.active {
+        border-bottom: em( 3 )solid $primary;
+
+        .nav-link {
+            color: $primary;
+        }
+    }
+
+    .nav-link {
+        padding: em( 8 );
+    }
+}
+.nav-link.active {
+    color: $primary;
+}
+
+@include media-breakpoint-down(md) {
+    .modal-menu {
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1100;
+        background: #fff;
+        padding-top: 20vh;
+        
+        & .menu-button {
+            border: 0;
+            font-size: 34px;
+            position: fixed;
+            right: 2vw;
+            top: 2vh;
+        }
+
+    }
+
+
+    .right-menu {
+        width: 33vw;
+        height: 100vh;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1100;
+        background: #fff;
+        padding-top: 20vh;
+        
+        & .menu-button {
+            border: 0;
+            font-size: 34px;
+            position: fixed;
+            right: 2vw;
+            top: 2vh;
+        }
+    }
+
+    .left-menu {
+        width: 33vw;
+        height: 100vh;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1100;
+        background: #fff;
+        padding-top: 20vh;
+        
+        & .menu-button {
+            border: 0;
+            font-size: 34px;
+            position: fixed;
+            left: 2vw;
+            top: 2vh;
+        }
+    }
+    
+    .normal-menu {
+        & .menu-button {
+            display: none;
+        }
+    }
+}
